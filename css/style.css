@@ -1,0 +1,631 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    height: 100px;
+    width: 100%;
+    /* background-color: rgb(205, 206, 203); */
+    position: relative;
+    color: rgb(50,50,50);
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+    
+}
+.navbar ul{
+    list-style: none;
+    display: inline-block;
+    width: 40%;
+    float: right;
+    margin-top: 15px;
+    margin-right: 10%;
+    /* border: 1px solid black; */
+    
+}
+.navbar ul li{
+    float: left;
+    text-decoration: none;
+    margin: 5% 0% 5% 10%;
+    
+}
+.navbar ul a{
+    color: rgb(50,50,50);
+}
+.navbar ul a:hover{
+   color: #f34949;
+}
+.navbar .logo{
+    /* background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 500px; */
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+.navbar .logo:hover{
+    opacity: 0.7;
+}
+
+/* ===================================== home section =========================================== */
+
+.home{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.leftHome{
+    margin-top: 10%;
+    width: 50%;
+}
+.leftHome h1{
+    font-family: 'Poiret One', cursive;
+    font-size: 60px;
+    color: rgb(50,50,50);
+}
+.leftHome button{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #f34949;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #fd5d5d;
+    
+}
+.leftHome button:hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color:#fa2a2a ;
+}
+
+.home .features{
+    display: flex;
+    font-size: 18px;
+    font-family: 'Poiret One', cursive;
+    line-height: 2;
+    margin-top: 10%;
+
+}
+.home .feature1, .home .feature2, .home .feature3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
+.home .feature1{
+    margin-left: 0px;
+}
+.home .feature1, .home .feature2{
+    border-right: 0.5px solid gray;
+    padding-right: 15px;
+}
+.home .rightHome{
+    background-image: url("../images/hero-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 600px;
+}
+
+
+
+/* ===========================================  about  ====================================== */
+.about{
+display: flex;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+justify-content: center;
+justify-items: center;
+}
+
+.about .leftHome{
+    height: 600px;
+    width: 40%;
+    background-image: url("../images/hero-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 15px gray;
+}
+.about .rightHome{
+    width: 60%;
+    padding: 5%;
+    margin-left: 2%;
+    margin-top: 10%;
+    font-family: 'Poiret One', cursive;
+}
+.about h4{
+    color:#f34949;
+}
+.about h2{
+    color: rgb(50,50,50);
+    font-size: 40px;
+    font-weight: 800;
+}
+.about p{
+
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(50,50,50);
+    font-size: 16px;
+    line-height: 1.5;
+}
+.about h3{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(50,50,50);
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 5%;
+}
+
+.specialDishes{
+    display: flex;
+    margin-top: 5%;
+}
+.specialDishes .sd1, .specialDishes .sd2, .specialDishes .sd3{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
+    margin-right: 5%;
+}
+.specialDishes .sd1:hover, .specialDishes .sd2:hover, .specialDishes .sd3:hover{
+opacity: 0.7;
+}
+
+.specialDishes .sd1-img, .specialDishes .sd2-img, .specialDishes .sd3-img{
+    background-image: url("../images/hero-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+}
+.specialDishes .sd1-heading, .specialDishes .sd2-heading, .specialDishes .sd3-heading{
+    color:#f34949;
+    font-size: 15px;
+    font-weight: 500;    
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* =======================================special dishes section ======================================= */
+.special-dishes-section{
+    margin-top: 5%;
+    width: 100%;
+    height:1700px;
+    background-color: rgb(245, 245, 245);
+    font-family: 'Roboto',sans-serif;
+}
+
+.special-dishes-section .heading1{
+    font-weight: 400;
+    color:#f34949;
+    font-size: 16px;
+    padding-top: 5%;
+}
+.special-dishes-section .sd1{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    justify-content: center;
+}
+.special-dishes-section .sd1-left{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-right: 5%;
+    margin-top: 5%;
+    padding-left: 5%;
+}
+.special-dishes-section .sd1-left h2{
+    font-size: 60px;
+    font-weight: 900;
+    left: 180px;
+}
+.special-dishes-section .sd1-left h2 span{
+    font-size: 20px;
+    font-weight: 50;
+}
+.special-dishes-section .sd1-textbox{
+    padding-left: 20%;
+}
+.special-dishes-section .sd1-left h3{
+    margin-top: 5%;
+    font-size: 25px;
+    font-weight: 400;
+}
+.special-dishes-section .sd1-left h3 span{
+    color:#f34949;
+}
+.special-dishes-section .sd1-left p{
+    margin-top: 5%;
+    line-height: 1.5;
+}
+.special-dishes-section .sd1-left .sd1-price{
+    margin-top: 5%;
+    font-weight: 600;
+    font-size: 30px;
+}
+.special-dishes-section .sd1-left button, .special-dishes-section .sd2-right button{
+    margin-top: 5%;
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #f34949;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #fd5d5d;
+    
+}
+.special-dishes-section .sd1-left button:hover, .special-dishes-section .sd2-right button:hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color:#fa2a2a ;
+}
+.special-dishes-section .sd1-right{
+    background-image: url("../images/steak.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    height: 600px;
+    margin-left: 20%;
+}
+
+.special-dishes-section .sd2{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    display: flex;
+   justify-content: center;
+   font-family: 'Roboto',sans-serif;
+}
+.special-dishes-section .sd2-left{
+    width: 40%;
+    margin-right: 5%;
+    height: 600px;
+    background-image: url("../images/salmon-zucchini.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.special-dishes-section .sd2-right{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.special-dishes-section .sd2-right h2{
+    font-size: 60px;
+    font-weight: 900;
+    position: relative;
+
+}
+.special-dishes-section .sd2-right h2 span{
+    font-size: 20px;
+    font-weight: 100;
+}
+.special-dishes-section .sd2-right .textbox{
+    padding-left: 22%;
+}
+.special-dishes-section .sd2-right h3 span{
+    font-size: 25px;
+    font-weight: 400;
+    color:#f34949;
+    margin-top: 5%;
+}
+.special-dishes-section .sd2-right p{
+    margin-top: 5%;
+    line-height: 1.5;
+}
+.special-dishes-section .sd2-right .sd2-price{
+    margin-top: 5%;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+/* ================================================== menu ======================================= */
+
+.menu h2{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+    font-weight: 700;
+    color:#f34949;
+    width: max-content;
+    font-family: 'Poiret One', cursive;
+}
+.menu .menu-headings{
+    font-family: 'Roboto',sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    padding: 2%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    justify-content: space-evenly;
+}
+.menu .menu-grid{
+    width: 80%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+display: grid;
+grid-template-columns: auto auto auto;
+margin-top: 0px;
+font-family: 'Roboto',sans-serif;
+}
+
+.menu .item1{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-top: 0px;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px dashed rgb(185, 185, 185);
+    
+}
+.menu .menu-grid .item-pic{
+    width: 80px;
+    height: 80px;
+    background-image: url("../images/breakfast-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.menu .item-details{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 2%;
+}
+.menu .item-details span{
+    font-size: 22px;
+    font-weight:300;
+}
+.menu .item-details h4{
+    margin-top: 5%;
+    font-size: 16px;
+    font-weight: 300;
+}
+.menu .menu-grid .item-price{
+    font-size: 22px;
+    font-weight:300;
+    padding-left: 5%;
+    color: rgb(136, 136, 136);
+}
+
+
+/* =========================================== our team ============================================ */
+.our-team h2{
+    font-family: 'Poiret One',sans-serif;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+    font-weight: 700;
+    color:#f34949;
+    width: max-content;
+}
+.our-team .members{
+    display: flex;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+}
+.our-team .members .p1, .our-team .members .p2, .our-team .members .p3{
+    width: 400px;
+    height: 500px;
+    margin: 2%;
+    background-color: greenyellow;
+}
+.our-team .members .p1:hover, .our-team .members .p2:hover, .our-team .members .p3:hover{
+    opacity: 0.7;
+}
+.our-team .members .p1{
+    background-image: url("../images/chef-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.our-team .members .p2{
+    background-image: url("../images/chef-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.our-team .members .p3{
+    background-image: url("../images/chef-3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.our-team .members .p1-details{
+    width: 80%;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:400px ;
+    padding-top: 5px;
+    background-color: white;
+    color: black;
+    font-family: 'Poiret One', cursive;
+    font-size: 22px;
+    font-weight: 900;
+}
+.our-team .members .p1-details span{
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* ==========================================  reservation  ======================================= */
+.reservation{
+    width: 100%;
+    height: 650px;
+    background-image: url("../images/reservation-bg.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto',sans-serif;
+}
+.booking-form h3{
+    padding-top: 10%;
+    margin-top: 5%;
+    font-size: 14px;
+    font-weight: 300;
+    color:#f34949;
+}
+.booking-form h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+.booking-form{
+    width: 30%;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px black;
+    margin-left: 15%;
+    margin-top: -35%;
+    font-family: 'Roboto',sans-serif;
+
+}
+
+.booking-form input{
+    width: 350px;
+    height: 25px;
+    padding: 7px;
+    margin: 7px;
+    border-radius: 5px;
+    border: 1px solid rgb(192, 192, 192);
+    font-size: 15px;
+    color: gray;
+}
+.booking-form .msgbox textarea{
+    width: 350px;
+    margin: 7px;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid rgb(192, 192, 192);
+    color: gray;
+}
+.booking-form button{
+margin-top: 3%;
+width: 150px;
+height: 40px;
+padding: 5px;
+border-radius: 20px;
+background-color: #f34949;
+font-size: 14px;
+color: white;
+font-weight: 600;
+border: none;
+cursor: pointer;
+box-shadow: 0px 0px 20px #fd5d5d;
+}
+
+.booking-form button:hover{
+transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+background-color:#fa2a2a ;
+}
+
+
+/* ========================================  footer ========================================== */
+.footer{
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin-top: 20%;
+    padding-top: 10%;
+    justify-content: space-evenly;
+    font-family: 'Poiret One',sans-serif;
+
+}
+.footer-c1, .footer-c2, .footer-c3{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+
+}
+.footer-c1 .footer-para{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5%;
+}
+.footer-c1 .social-media{
+    margin-top: 5%;
+   
+}
+
+.footer-c2 h2{
+    font-weight: 900;
+    margin-left: 14%;    
+}
+.footer-c2 table{
+    border-collapse: separate;
+    border-spacing:50px 10px;
+    margin-top: 2%;
+    font-weight: 700;
+    text-align: left;
+}
+
+.footer-c3 p{
+    margin-top: 5%;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.footer-c3 input{
+    width: 250px;
+    height: 20px;
+    padding: 5px;
+    border: 1px solid rgb(170, 170, 170);
+    margin-top: 5%;
+    border-radius: 5px;
+}
+
+.footer-c3 button{
+    margin-top: 5%;
+    width: 250px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #f34949;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #fd5d5d;
+    }
+    
+.footer-c3 button:hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color:#fa2a2a ;
+    }
+    
